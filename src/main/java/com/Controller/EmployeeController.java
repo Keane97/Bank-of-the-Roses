@@ -1,7 +1,7 @@
-package com.javaguides.springboot.Controller;
+package com.Controller;
 
-import com.javaguides.springboot.Model.Employee;
-import com.javaguides.springboot.Service.EmployeeService;
+import com.Model.Model.Employee;
+import com.Service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,13 +1,12 @@
-package com.javaguides.springboot.Service.impl;
+package com.Service.impl;
 
-import com.javaguides.springboot.Exception.ResourceNotFoundException;
-import com.javaguides.springboot.Model.Employee;
-import com.javaguides.springboot.Service.EmployeeService;
-import com.javaguides.springboot.repository.EmployeeRepository;
+import com.Exceptions.Exception.ResourceNotFoundException;
+import com.Service.EmployeeService;
+import com.DAO.repository.EmployeeRepository;
+import com.Model.Model.Employee;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {

@@ -1,6 +1,6 @@
-package com.javaguides.springboot.Service;
+package com.Service;
 
-import com.javaguides.springboot.Model.Employee;
+import com.Model.Model.Employee;
 
 import java.util.List;
 

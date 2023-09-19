@@ -1,4 +1,4 @@
-package com.javaguides.springboot;
+package com.BankOfTheRoses;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
