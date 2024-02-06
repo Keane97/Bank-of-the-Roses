@@ -1,6 +1,6 @@
-package com.Service;
+package com.BankOfTheRoses.Service;
 
-import com.Model.Model.Employee;
+import com.BankOfTheRoses.Model.Employee;
 
 import java.util.List;
 

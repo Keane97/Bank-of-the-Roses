@@ -1,7 +1,7 @@
-package com.Controller;
+package com.BankOfTheRoses.Controller;
 
-import com.Model.Model.Employee;
-import com.Service.EmployeeService;
+import com.BankOfTheRoses.Model.Employee;
+import com.BankOfTheRoses.Service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +13,7 @@ import java.util.List;
 @RequestMapping("/api/employees")
 public class EmployeeController {
 
-    private EmployeeService employeeService;
+    private final EmployeeService employeeService;
 
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
@@ -35,7 +35,7 @@ public class EmployeeController {
     //http://localhost:8080/api/employees/1         -> Endpoint of a valid URL for retrieving the record with the id of "1"
     @GetMapping(value = "/{id}")
     public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") long employeeId){
-        return new ResponseEntity<Employee>(employeeService.getEmployeeByID(employeeId), HttpStatus.OK);
+        return new ResponseEntity<>(employeeService.getEmployeeByID(employeeId), HttpStatus.OK);
     }
 
     //http://localhost:8080/api/employees/1         -> Endpoint of a valid URL for retrieving the record with the id of "1"
@@ -50,7 +50,7 @@ public class EmployeeController {
     public ResponseEntity<String> deleteEmployee(@PathVariable("id") long id){
         employeeService.deleteEmployee(id);
 
-        return new ResponseEntity<String>("Employee Deleted Successfully", HttpStatus.OK);
+        return new ResponseEntity<>("Employee Deleted Successfully", HttpStatus.OK);
     }
 
 }

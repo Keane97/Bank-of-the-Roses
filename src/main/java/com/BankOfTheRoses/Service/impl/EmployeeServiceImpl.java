@@ -1,9 +1,9 @@
-package com.Service.impl;
+package com.BankOfTheRoses.Service.impl;
 
-import com.Exceptions.Exception.ResourceNotFoundException;
-import com.Service.EmployeeService;
-import com.DAO.repository.EmployeeRepository;
-import com.Model.Model.Employee;
+import com.BankOfTheRoses.Exception.ResourceNotFoundException;
+import com.BankOfTheRoses.Model.Employee;
+import com.BankOfTheRoses.Service.EmployeeService;
+import com.BankOfTheRoses.repository.EmployeeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private EmployeeRepository employeeRepository;
+    private final EmployeeRepository employeeRepository;
 
 
     public EmployeeServiceImpl(EmployeeRepository employeeRepository) {

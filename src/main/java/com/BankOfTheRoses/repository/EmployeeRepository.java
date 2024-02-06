@@ -1,6 +1,6 @@
-package com.DAO.repository;
+package com.BankOfTheRoses.repository;
 
-import com.Model.Model.Employee;
+import com.BankOfTheRoses.Model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //Spring Data JPA internally provides @Repository Annotation, so we don't need to add @Repository annotation to EmployeeRepository interface
